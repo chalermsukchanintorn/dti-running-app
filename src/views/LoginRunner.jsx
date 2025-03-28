@@ -74,7 +74,7 @@ function LoginRunner() {
                 </Link> 
               </Typography>              
             </Typography>
-            <Typography variant='h3' sx={{mt: 4, textAlign: 'center'}}>
+            <Typography sx={{mt: 4, textAlign: 'center', fontWeight:'bold'}}>
               Created by NinniN DTI-SAU 2025
             </Typography>
           </Box>
