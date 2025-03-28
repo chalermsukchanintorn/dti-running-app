@@ -50,7 +50,7 @@ function LoginRunner() {
           <Typography variant='h3' sx={{ textAlign: 'center', color: '#011474' }}>
             เข้าใช้งาน<br />Running Web Application
           </Typography>
-          <Avatar alt="Running" src={run} variant='rounded' sx={{ mx: 'auto', mt: 3, width: 120, height: 120, boxShadow: 2 }} />
+          <Avatar alt="Running" src={'https://png.pngtree.com/png-vector/20240705/ourmid/pngtree-a-running-logo-png-image_12963253.png'} variant='rounded' sx={{ mx: 'auto', mt: 3, width: 120, height: 120, boxShadow: 2 }} />
           <Box sx={{width:'60%', mx:'auto', mt: 3}}>
             <Typography>
               ป้อนชื่อผู้ใช้
