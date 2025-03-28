@@ -27,7 +27,7 @@ function RunOfRunner() {
     //ดึงข้อมูลการวิ่งของนักวิ่งจากฐานข้อมูล
     try {
       const getData = async () => {
-        const response = await fetch(`http://localhost:4444/run/${runner.runnerId}`, {
+        const response = await fetch(`https://run-server-service-by-prisma-eight.vercel.app/run/${runner.runnerId}`, {
           method: 'GET',
         })
 
@@ -49,7 +49,7 @@ function RunOfRunner() {
   const handleDeleteRun = async (runId) => {
     if (window.confirm('คุณแน่ใจหรือไม่ว่าต้องการลบข้อมูลการวิ่งนี้?')) {
       try {
-        const response = await fetch(`http://localhost:4444/run/${runId}`, {
+        const response = await fetch(`https://run-server-service-by-prisma-eight.vercel.app/run/${runId}`, {
           method: 'DELETE',
         })
 
@@ -89,7 +89,7 @@ function RunOfRunner() {
               </Typography>
             </Link>
             <Avatar alt="Runner"
-              src={runnerImage === '' ? Person : `http://localhost:4444/images/runner/${runnerImage}`}
+              src={runnerImage === '' ? Person : `${runnerImage}`}
               sx={{ width: 50, height: 50, ml: 2 }} />
             <Link to="/" style={{ textDecoration: 'none', color: 'green', marginLeft: '10px' }}>
               Logout
